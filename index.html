@@ -1,74 +1,234 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Quokkaproject.GitHub.io : QuokkaProject website">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quokka CMS, Content management system with Flask and MongoDB">
+    <meta name="keywords" content="CMS, Python, Flask, Wordpress, Content, Management, System, Blog, Engine, Site, Portal, MongoDB">
+    <meta name="author" content="Nilton OS">
+    <link rel="shortcut icon" href="images/favicon.ico">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <title>Quokka CMS - The happiest CMS in the world</title>
 
-    <title>Quokkaproject.GitHub.io</title>
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="bootstrap/css/carousel.css" rel="stylesheet">
+    <link href="socialcount/socialcount.css" rel="stylesheet">
+	<link href="socialcount/socialcount-icons.css" rel="stylesheet">
+
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-45369544-1', 'quokkaproject.org');
+	  ga('send', 'pageview');
+	</script>
   </head>
-
+<!-- NAVBAR
+================================================== -->
   <body>
+<a target="_blank" href="https://github.com/quokkaproject/quokka"><img style="position: absolute; z-index:999; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+    <div class="navbar-wrapper">
+      <div class="container">
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/quokkaproject">View on GitHub</a>
+	<div class="navbar navbar-default navbar-fixed-top">
+	  <div class="container">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	      </button>
+	    </div>
+	    <div class="navbar-collapse collapse">
+	      <ul class="nav navbar-nav">
+                <li class="active"><a href="https://github.com/quokkaproject/quokka" target="_blank"><img src="images/logo.png" style="height: 17px;"></a></li>
+		<li><a href="http://demo.quokkaproject.org" target="_blank">Demo</a></li>
+		<li><a href="https://github.com/quokkaproject/quokka/wiki" target="_blank">Wiki</a></li>
+		<li class="dropdown">
+		  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Development <b class="caret"></b></a>
+		  <ul class="dropdown-menu">
+              <li><a href="https://groups.google.com/forum/#!forum/quokka-developers" target="_blank">Forum</a></li>
+              <li><a href="https://github.com/quokkaproject/quokka/graphs/contributors" target="_blank">Contributors</a></li>
+		    <li><a href="https://github.com/quokkaproject/quokka/blob/master/quokka/contrib/scripts/setup-quokka-nginx-uwsgi-ubuntu.sh" target="_blank">Setup Ubuntu</a></li>
+		    <li><a href="https://github.com/quokkaproject/quokka/blob/master/quokka/contrib/scripts/setup-quokka-nginx-uwsgi-opensuse.sh" target="_blank">Setup OpenSUSE</a></li>
+		    <li><a href="https://github.com/quokkaproject/quokka/issues" target="_blank">Bugs|Features</a></li>
+		  </ul>
+		</li>
+	      </ul>
+	    </div>
+	  </div>
+	</div>
 
-          <h1 id="project_title">Quokkaproject.GitHub.io</h1>
-          <h2 id="project_tagline">QuokkaProject website</h2>
-
-        </header>
+      </div>
     </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+	<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	<li data-target="#myCarousel" data-slide-to="1"></li>
+	<li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+	  <div class="item active">
+	  <div class="container">
+	    <div class="carousel-caption">
+	    <h1>Flask and MongoDB powered CMS</h1>
+	      <p>
+	      <img class="img-responsive" style="margin:auto;" src="https://raw.github.com/quokkaproject/quokka/master/docs/logo.png" alt="..."></p>
+	      <p><a class="btn btn-lg btn-default" href="https://github.com/quokkaproject/quokka/archive/master.zip" role="button">Download</a></p>
+	    </div>
+	  </div>
+	</div>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+	<div class="item">
+	  <div class="container">
+	    <div class="carousel-caption">
+	      <h1>Quokka CMS</h1>
+	      <p>Quokka is a flexible content management platform powered by Python, Flask and MongoDB.
+Quokka provides a "full-stack" Flask application plus a bunch of selected extensions to provide all the needed CMS admin features and a flexible-easy way to extend the platform with quokka-modules built following the Flask Blueprints pattern.</p>
+	      <p><a class="btn btn-lg btn-default" href="http://demo.quokkaproject.org/" target="_blank" role="button">Try the Demo Quokka CMS</a></p>
+	    </div>
+	  </div>
+	</div>
+	<div class="item">
+	  <div class="container">
+	    <div class="carousel-caption">
+	      <h1>Current features</h1>
+	      <p>Customizable admin interface,
+    Export data to json or csv,
+    multi-level unlimited nested channels (MPTT),
+    Beauty urls and SMART-SLUG,
+    Themes,
+    Extensible
+</p>
+	      <p><a class="btn btn-lg btn-default" href="https://github.com/quokkaproject/quokka/wiki/about" target="_blank" role="button">Learn more</a></p>
+	    </div>
+	  </div>
+	</div>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+      </div>
 
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
 
-<h3>
-<a id="rather-drive-stick" class="anchor" href="#rather-drive-stick" aria-hidden="true"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
 
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+    <div class="container marketing">
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
 
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+      <!-- START THE FEATURETTES -->
 
-<p>Having trouble with Pages? Check out the documentation at <a href="https://help.github.com/pages">https://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
+      <hr class="featurette-divider">
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      <p><h3>Search, filters, actions, pagination, access control</h3><img class="featurette-image img-responsive" src="images/post_list.png" alt="manage content post list"></p>
+
+
+      <hr class="featurette-divider">
+
+      <p><h3>WYSIWYG Editor (or markdown editor as option)</h3><img class="featurette-image img-responsive" src="images/new_post.png" alt="Article post"></p>
+
+
+      <hr class="featurette-divider">
+
+      <p><h3>Media management</h3><img class="featurette-image img-responsive" src="images/media.png" alt="Media management"></p>
+
+
+      <hr class="featurette-divider">
+
+
+      <p><h3>Multiple Themes</h3><img class="featurette-image img-responsive" src="images/quokka_screen01.png" alt="multiple themes CMS"></p>
+
+
+      <hr class="featurette-divider">
+
+      <p><h3>Modules (cart, e-commerce, LMS, etc...)</h3><img class="featurette-image img-responsive" src="images/cart_checkout.png" alt="cart checkout e-commerce"></p>
+
+
+      <hr class="featurette-divider">
+
+      <p><h3>Customizable admin dashboard (example using GCharts)</h3><img class="featurette-image img-responsive" src="images/admin_dashboard.png" alt="admin dashboard"></p>
+
+
+      <hr class="featurette-divider">
+      <!-- /END THE FEATURETTES -->
+
+    <p><h3>Comments</h3>
+    	<h5>for feature requests and bug reporting please use the issues page.</h5>
+    </p>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'quokkaproject'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+      <!-- FOOTER -->
+      <footer>
+        <ul class="socialcount" data-url="http://quokkaproject.org/" data-counts="true" data-share-text="http://quokkaproject.org/">
+	      <li class="facebook">
+	      <a href="https://www.facebook.com/sharer/sharer.php?u=http://quokkaproject.org/" title="Share">
+	      <span class="social-icon icon-facebook"></span>
+	      <span class="count">Like</span></a>
+	      </li>
+	      <li class="twitter">
+	      <a href="https://twitter.com/intent/tweet?text=http://quokkaproject.org/" title="Share">
+	      <span class="social-icon icon-twitter"></span>
+	      <span class="count">Tweet</span></a>
+	      </li>
+	      <li class="googleplus">
+	      <a href="https://plus.google.com/share?url=http://quokkaproject.org/" title="Share">
+	      <span class="social-icon icon-googleplus"></span>
+	      <span class="count">+1</span></a>
+	      </li>
+	      <li class="pull-right">
+	      <a href="#">Flask and MongoDB powered CMS <span class="glyphicon glyphicon-chevron-up">
+	      </span></a></li>
+        </ul>
       </footer>
-    </div>
 
-    
 
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="socialcount/socialcount.js"></script>
   </body>
 </html>
